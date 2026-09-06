@@ -1,0 +1,6 @@
+C:\Users\ASHIKUR RAHMAN\source\repos\prb 1\prb 1\obj\Debug\net10.0\prb_1.Properties.Resources.resources
+C:\Users\ASHIKUR RAHMAN\source\repos\prb 1\prb 1\obj\Debug\net10.0\prb 1.csproj.GenerateResource.cache
+C:\Users\ASHIKUR RAHMAN\source\repos\prb 1\prb 1\obj\Debug\net10.0\prb 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASHIKUR RAHMAN\source\repos\prb 1\prb 1\obj\Debug\net10.0\prb 1.AssemblyInfoInputs.cache
+C:\Users\ASHIKUR RAHMAN\source\repos\prb 1\prb 1\obj\Debug\net10.0\prb 1.AssemblyInfo.cs
+C:\Users\ASHIKUR RAHMAN\source\repos\prb 1\prb 1\obj\Debug\net10.0\prb 1.csproj.CoreCompileInputs.cache

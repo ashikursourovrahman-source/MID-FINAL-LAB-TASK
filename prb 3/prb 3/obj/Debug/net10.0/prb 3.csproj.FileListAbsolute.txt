@@ -1,0 +1,14 @@
+C:\Users\ASHIKUR RAHMAN\source\repos\prb 3\prb 3\bin\Debug\net10.0\prb 3.exe
+C:\Users\ASHIKUR RAHMAN\source\repos\prb 3\prb 3\bin\Debug\net10.0\prb 3.deps.json
+C:\Users\ASHIKUR RAHMAN\source\repos\prb 3\prb 3\bin\Debug\net10.0\prb 3.runtimeconfig.json
+C:\Users\ASHIKUR RAHMAN\source\repos\prb 3\prb 3\bin\Debug\net10.0\prb 3.dll
+C:\Users\ASHIKUR RAHMAN\source\repos\prb 3\prb 3\bin\Debug\net10.0\prb 3.pdb
+C:\Users\ASHIKUR RAHMAN\source\repos\prb 3\prb 3\obj\Debug\net10.0\prb 3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASHIKUR RAHMAN\source\repos\prb 3\prb 3\obj\Debug\net10.0\prb 3.AssemblyInfoInputs.cache
+C:\Users\ASHIKUR RAHMAN\source\repos\prb 3\prb 3\obj\Debug\net10.0\prb 3.AssemblyInfo.cs
+C:\Users\ASHIKUR RAHMAN\source\repos\prb 3\prb 3\obj\Debug\net10.0\prb 3.csproj.CoreCompileInputs.cache
+C:\Users\ASHIKUR RAHMAN\source\repos\prb 3\prb 3\obj\Debug\net10.0\prb 3.dll
+C:\Users\ASHIKUR RAHMAN\source\repos\prb 3\prb 3\obj\Debug\net10.0\refint\prb 3.dll
+C:\Users\ASHIKUR RAHMAN\source\repos\prb 3\prb 3\obj\Debug\net10.0\prb 3.pdb
+C:\Users\ASHIKUR RAHMAN\source\repos\prb 3\prb 3\obj\Debug\net10.0\prb 3.genruntimeconfig.cache
+C:\Users\ASHIKUR RAHMAN\source\repos\prb 3\prb 3\obj\Debug\net10.0\ref\prb 3.dll
