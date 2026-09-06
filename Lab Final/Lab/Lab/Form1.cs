@@ -14,6 +14,7 @@ namespace Lab
     public partial class Form1 : Form
     {
         Order order = new Order();
+
         public Form1()
         {
             InitializeComponent();
@@ -94,8 +95,8 @@ namespace Lab
                 membership = "Regular";
 
             SqlConnection con = new SqlConnection(
-                @"Data Source=DESKTOP-QD2NICG\SQLEXPRESS;
-                Initial Catalog=Customer;
+                @"Data Source=SOUROV\SQLEXPRESS;
+                Initial Catalog=sourov;
                 Integrated Security=True");
 
             try
@@ -103,7 +104,7 @@ namespace Lab
                 con.Open();
 
                 string checkQuery =
-                    "SELECT COUNT(*) FROM HHHH WHERE [Name] = @Name";
+                    "SELECT COUNT(*) FROM sourov WHERE [Name] = @Name";
 
                 SqlCommand checkCmd =
                     new SqlCommand(checkQuery, con);
@@ -120,10 +121,11 @@ namespace Lab
                 }
 
                 string query =
-     "INSERT INTO HHHH " +
-     "([Name], [Phone], [Gender], [Membership], [OrderItems], [NumberOfItems], [TotalBill]) " +
-     "VALUES " +
-     "(@Name, @Phone, @Gender, @Membership, @OrderItems, @NumberOfItems, @TotalBill)";
+                    "INSERT INTO sourov " +
+                    "([Name], [Phone], [Gender], [Membership], [OrderItems], [NumberOfItems], [TotalBill]) " +
+                    "VALUES " +
+                    "(@Name, @Phone, @Gender, @Membership, @OrderItems, @NumberOfItems, @TotalBill)";
+
                 SqlCommand cmd = new SqlCommand(query, con);
 
                 cmd.Parameters.AddWithValue("@Name", textBox1.Text);
@@ -149,6 +151,7 @@ namespace Lab
                 con.Close();
             }
         }
+
         private double CalculateBill()
         {
             double total = 0;
@@ -179,7 +182,6 @@ namespace Lab
             return total;
         }
 
-
         private string GetOrderItems()
         {
             string items = "";
@@ -201,7 +203,6 @@ namespace Lab
 
             return items;
         }
-
 
         private void ClearAll()
         {
@@ -235,8 +236,8 @@ namespace Lab
             }
 
             SqlConnection con = new SqlConnection(
-                 @"Data Source=DESKTOP-QD2NICG\SQLEXPRESS;
-                Initial Catalog=Customer;
+                @"Data Source=SOUROV\SQLEXPRESS;
+                Initial Catalog=sourov;
                 Integrated Security=True");
 
             try
@@ -244,7 +245,7 @@ namespace Lab
                 con.Open();
 
                 string query =
-                    "SELECT * FROM HHHH WHERE [Name] = @Name";
+                    "SELECT * FROM sourov WHERE [Name] = @Name";
 
                 SqlCommand cmd = new SqlCommand(query, con);
 
@@ -256,7 +257,7 @@ namespace Lab
                 if (reader.Read())
                 {
                     textBox2.Text =
-                      reader["Phone"].ToString();
+                        reader["Phone"].ToString();
 
                     string gender =
                         reader["Gender"].ToString();
@@ -341,8 +342,8 @@ namespace Lab
                 membership = "Regular";
 
             SqlConnection con = new SqlConnection(
-                @"Data Source=DESKTOP-QD2NICG\SQLEXPRESS;
-                Initial Catalog=Customer;
+                @"Data Source=SOUROV\SQLEXPRESS;
+                Initial Catalog=sourov;
                 Integrated Security=True");
 
             try
@@ -350,14 +351,14 @@ namespace Lab
                 con.Open();
 
                 string query =
-    "UPDATE HHHH SET " +
-    "[Phone] = @Phone, " +
-    "[Gender] = @Gender, " +
-    "[Membership] = @Membership, " +
-    "[OrderItems] = @OrderItems, " +
-    "[NumberOfItems] = @NumberOfItems, " +
-    "[TotalBill] = @TotalBill " +
-    "WHERE [Name] = @Name";
+                    "UPDATE sourov SET " +
+                    "[Phone] = @Phone, " +
+                    "[Gender] = @Gender, " +
+                    "[Membership] = @Membership, " +
+                    "[OrderItems] = @OrderItems, " +
+                    "[NumberOfItems] = @NumberOfItems, " +
+                    "[TotalBill] = @TotalBill " +
+                    "WHERE [Name] = @Name";
 
                 SqlCommand cmd = new SqlCommand(query, con);
 
@@ -365,7 +366,7 @@ namespace Lab
                     "@Name", textBox1.Text);
 
                 cmd.Parameters.AddWithValue(
-     "@Phone", textBox2.Text);
+                    "@Phone", textBox2.Text);
 
                 cmd.Parameters.AddWithValue(
                     "@Gender", gender);
@@ -419,8 +420,8 @@ namespace Lab
                 return;
 
             SqlConnection con = new SqlConnection(
-                @"Data Source=DESKTOP-QD2NICG\SQLEXPRESS;
-                Initial Catalog=Customer;
+                @"Data Source=SOUROV\SQLEXPRESS;
+                Initial Catalog=sourov;
                 Integrated Security=True");
 
             try
@@ -428,7 +429,7 @@ namespace Lab
                 con.Open();
 
                 string query =
-                    "DELETE FROM HHHH WHERE [Name] = @Name";
+                    "DELETE FROM sourov WHERE [Name] = @Name";
 
                 SqlCommand cmd = new SqlCommand(query, con);
 
@@ -456,4 +457,3 @@ namespace Lab
         }
     }
 }
-
